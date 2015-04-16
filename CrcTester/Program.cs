@@ -16,7 +16,9 @@ namespace CrcTester
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SimpleCrcGenerator());
+            Application.Run(new SimpleCrcGenerator()); // this is the simple generator form
+            //Application.Run(new CRCTester()); // this is the form that shows all the steps
+
         }
     }
 }
