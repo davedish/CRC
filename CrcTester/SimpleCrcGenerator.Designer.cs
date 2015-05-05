@@ -34,6 +34,8 @@
             this.txtOutput = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblElapsedTime = new System.Windows.Forms.Label();
+            this.txtCrcValue = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -74,16 +76,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtOutput.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOutput.Location = new System.Drawing.Point(50, 233);
+            this.txtOutput.Location = new System.Drawing.Point(50, 266);
             this.txtOutput.Multiline = true;
             this.txtOutput.Name = "txtOutput";
-            this.txtOutput.Size = new System.Drawing.Size(807, 236);
+            this.txtOutput.Size = new System.Drawing.Size(807, 291);
             this.txtOutput.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 236);
+            this.label2.Location = new System.Drawing.Point(5, 268);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 3;
@@ -94,17 +96,35 @@
             this.lblElapsedTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lblElapsedTime.AutoSize = true;
-            this.lblElapsedTime.Location = new System.Drawing.Point(50, 476);
+            this.lblElapsedTime.Location = new System.Drawing.Point(47, 560);
             this.lblElapsedTime.Name = "lblElapsedTime";
             this.lblElapsedTime.Size = new System.Drawing.Size(164, 13);
             this.lblElapsedTime.TabIndex = 5;
             this.lblElapsedTime.Text = "Make Me Blank until you Use Me";
             // 
+            // txtCrcValue
+            // 
+            this.txtCrcValue.Location = new System.Drawing.Point(50, 233);
+            this.txtCrcValue.Name = "txtCrcValue";
+            this.txtCrcValue.Size = new System.Drawing.Size(151, 20);
+            this.txtCrcValue.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 236);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "CRC";
+            // 
             // SimpleCrcGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 506);
+            this.ClientSize = new System.Drawing.Size(869, 582);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtCrcValue);
             this.Controls.Add(this.lblElapsedTime);
             this.Controls.Add(this.txtOutput);
             this.Controls.Add(this.label2);
@@ -126,5 +146,7 @@
         private System.Windows.Forms.TextBox txtOutput;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblElapsedTime;
+        private System.Windows.Forms.TextBox txtCrcValue;
+        private System.Windows.Forms.Label label3;
     }
 }

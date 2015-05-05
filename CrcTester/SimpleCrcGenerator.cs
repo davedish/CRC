@@ -24,6 +24,7 @@ namespace CrcTester
             Stopwatch sw = new Stopwatch();
             sw.Start();
             txtOutput.Text = Arinc702Crc.AppendCrcToMessage(txtInput.Text);
+            txtCrcValue.Text = txtOutput.Text.Substring(txtOutput.Text.Length - 4);
             sw.Stop();
             lblElapsedTime.Text = "Elapsed time: " + sw.Elapsed.ToString();
         }
